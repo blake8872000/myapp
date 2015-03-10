@@ -2,7 +2,7 @@ var React=require("react");
 var kse=require("ksana-search");
 var maincomponent = React.createClass({
   getInitialState:function() {
-    return {result:[],tofind:"資生"};
+    return {result:[],tofind:"天才"};
   },
   search:function() {
     kse.search("sample",this.state.tofind,{range:{start:0}},function(err,data){
